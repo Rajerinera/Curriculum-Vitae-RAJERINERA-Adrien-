@@ -1,0 +1,322 @@
+body {
+    margin: 0%;
+}
+
+* {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1em;
+}
+a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    font-size: 20px;
+    font-weight: 800;
+    color: black;
+    overflow: hidden;
+    background: linear-gradient(to right, midnightblue, midnightblue 50%, royalblue 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+    text-decoration: none; // text decorations are clipped in WebKit browsers
+    &:hover {
+      background-position: 0 100%;
+    }
+}
+
+
+
+#nom {
+    display: flex;
+}
+
+.photo2 {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.photo_ecran {
+    display: none;
+}
+
+cite {
+    font-style: normal;
+    color: #ffd700;
+}
+
+.Nom1 {
+    font-size: 3em;
+    text-decoration: none;
+}
+
+.Nom2 {
+    margin-top: -30px;
+    font-size: 2em;
+    margin-bottom: 80px;
+}
+
+.Nom2 > cite {
+    font-style: normal;
+    color: black;
+    text-decoration: underline #ffd700;
+}
+
+#title1,
+#title2,
+#title3 {
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    font-size: 1.3em;
+}
+
+h3 {
+    background-color: black;
+    text-transform: uppercase;
+    color: #ffd700;
+    font-size: 30px;
+    text-align: center;
+    padding: 0%;
+}
+
+h4 {
+    color: black;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-left: 20px;
+    box-sizing: border-box;
+}
+
+hr {
+    color: #ffd700;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    background-color: #ffd700;
+}
+
+strong {
+    text-transform: uppercase;
+    font-style: normal;
+}
+
+.bannière {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#conteneur {
+    display: flex;
+    width: 100%;
+}
+/* La partie formation */
+.form {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.form_etude {
+    width: 40%;
+}
+
+.form_date {
+    margin-left: 20px;
+}
+.plan {
+    display: flex;
+    margin-left: 20px;
+    width: 40%;
+}
+
+/* la partie taf */
+.taf_m {
+    width: 40%;
+}
+.element1 {
+    width: 30%;
+    text-align: justify;
+    background-color: #ffd700;
+    position: relative;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.element2 {
+    width: 70%;
+    background-image: url("photo/fond-site.jpg");
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+img.photo {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+}
+
+#presentation {
+    color: #212121;
+    font-size: large;
+    text-align: justify;
+    margin: 10px 0;
+    padding: 5px;
+
+}
+
+address {
+    font-size: large;
+    font-weight: bold;
+    color: #212121;
+}
+
+.info {
+    font-size: large;
+    color: #212121;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#global {
+    display: flex;
+}
+
+aside p {
+    color: #212121;
+}
+
+aside {
+    position: absolute;
+    bottom: 50px;
+    left: 0px;
+    width: 100%;
+}
+
+.grad {
+    font-size: 45px;
+    color: #ffd700;
+}
+
+#sport {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sport_logo {
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.compétence_informatique {
+    display: flex;
+    justify-content: space-around;
+}
+ul {
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+}
+.competence {
+    width: 50%;
+}
+
+.competence p {
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.cercle1 {
+    border: 3px solid #ffd700;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+}
+
+.cercle {
+    border: 1px solid #ffd700;
+    border-radius: 50%;
+    height: 5px;
+    width: 5px;
+    margin-top: 6px;
+    margin-left: 6px;
+    margin-right: 6px;
+    background-color: #ffd700;
+}
+
+@media all and (max-width: 991px) {
+    #conteneur {
+        flex-direction: column-reverse;
+    }
+
+    .element1 {
+        width: 100%;
+        margin: 0%;
+    }
+
+    .element2 {
+        background-color: aliceblue;
+        background-image: none;
+        width: 100%;
+        margin: 0%;
+    }
+
+    .taf {
+        display: flex;
+        flex-direction: column;
+    }
+    #ph {
+        display: none;
+    }
+    .photo_ecran {
+        display: block;
+        width: 10%;
+    }
+    .photo2 {
+        height: 160px;
+        width: 160px;
+        position: relative;
+        left: 70px;
+        border: 5px solid;
+    }
+    .Nom2 {
+        font-size: x-large;
+    }
+    #nom {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #presentation {
+        width: 100%;
+    }
+    aside {
+        position: relative;
+    }
+    ul {
+        list-style-type: none;
+    }
+    .compétence_informatique {
+        width: 100%;
+    }
+    p {
+        font-size: large;
+        text-align: start;
+    }
+}
